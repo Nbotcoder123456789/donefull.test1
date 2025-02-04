@@ -27,6 +27,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     document.querySelector('main').classList.add('fade-in');
                     // Reinitialize the charts after loading new content
                     initializeCharts();
+                    // Add footer content
+                    addFooterContent();
                 })
                 .catch(error => {
                     console.error("There was a problem with the fetch operation:", error);
@@ -257,6 +259,18 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
+    // Add footer content
+    function addFooterContent() {
+        const footer = document.getElementById('footer');
+        footer.innerHTML = `
+            <p>&copy; 2025 Biến Đổi Khí Hậu Việt Nam &copy; Cục thủy văn Việt Nam</p>
+            <p>Tác giả: Trần Đức Nam</p>
+            <p>Người viết: Trần Đức Nam</p>
+        `;
+    }
+
     // Initialize charts on page load
     initializeCharts();
+    // Add footer content on page load
+    addFooterContent();
 });
