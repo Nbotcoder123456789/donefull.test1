@@ -47,11 +47,13 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 }
 
 nav ul li {
     margin: 0 10px;
+    flex: 0 0 auto;
 }
 
 nav ul li a {
