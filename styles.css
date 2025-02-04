@@ -149,6 +149,14 @@ canvas {
     header, footer {
         padding: 10px;
     }
+    nav ul {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    nav ul li {
+        flex: 0 0 auto;
+    }
     main .content, main .details {
         max-width: 100%;
     }
